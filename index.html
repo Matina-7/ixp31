@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siamese Cat Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="title">Siamese Cat Adventure</h1>
+
+    <div class="ui">
+        <p><strong>Controls: W = Jump | A = Left | D = Right</strong></p>
+        <p><strong>Collect at least 6 coins. Avoid monsters. Time limit: 90s.</strong></p>
+        <p id="coinCount">Coins: 0 / 8</p>
+        <p id="timer">Time: 90</p>
+        <p id="status"></p>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Item Choice Box -->
+    <div id="dialogueBox" class="hidden">
+        <p id="dialogueText">You found an item! Choose one:</p>
+        <button class="optionBtn" onclick="choosePower('spring')">Spring Jump</button>
+        <button class="optionBtn" onclick="choosePower('balloon')">Balloon Glide</button>
+        <button class="optionBtn" onclick="choosePower('dash')">Dash</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
