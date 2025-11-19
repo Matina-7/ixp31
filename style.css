@@ -1,0 +1,44 @@
+body {
+    background: #d26b6b;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: white;
+    margin-top: 10px;
+}
+
+#gameCanvas {
+    border: 3px solid white;
+    background: url('redbrick.svg');
+    background-size: 200px;
+    margin-top: 10px;
+}
+
+.ui p {
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#dialogueBox {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.optionBtn {
+    margin: 10px;
+    padding: 10px 20px;
+}
